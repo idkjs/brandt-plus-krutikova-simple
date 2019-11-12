@@ -188,3 +188,25 @@ Project Link: [https://github.com/idkjs/brandt-plus-krutikova-simple](https://gi
 [demo]: https://idkjs.github.io/brandt-plus-krutikova-simple/
 [@hisophiabrandt]: https://twitter.com/hisophiabrandt
 [@rita_krutikova]: https://twitter.com/rita_krutikova
+
+
+ripped from https://github.com/pckilgore/bs-biginteger/blob/master/src/BigInteger.re
+
+> What is `type t`?
+
+> It is a ocaml convention for "the type of this module".  So if the module was named "Fish", `type t` would be the fish.  We could just as easily call it anything else, even `type fish`, but then we'd be referring to it as `Fish.fish` which seems silly, right? So we call it `type t` and refer to it as `Fish.t` and by convention know `t` means the module's type.
+
+> A ReasonML module is a type packaged with its behavior.  In this way, it is similar to an Object-Oriented language's concept of `class`.
+
+> So here, `type t` is the BigInteger data structure, packaged with the methods
+ we can to operate on that type.
+
+> Because we don't really know (or, honestly, care) about _how_ the BigInteger
+ library implements the BigInteger type, we just declare it here, which means
+ it is an "abstract type", which I always think of as, "a type that must be
+ used consistently by the functions that operate on it, but for which the
+ particular implementation of the type and those functions are assumed to be
+ correct".
+
+> See below around the definition of `external abs` for an example of a
+ non-abstract type t.

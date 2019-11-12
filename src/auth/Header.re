@@ -7,18 +7,14 @@ let make = () => {
   let (password, setPassword) = React.useState(() => "Password12345@");
   let handleSignin = () =>
     Js.Promise.(
-      Auth.signIn(~username, ~password)
+      Amplify.signIn(~username, ~password)
       |> then_(res => {
-           Js.log2("res", res);
-           let user = res->Types.userfromJs;
-           let userData: Types.userData = {
-             isLoggedIn: true,
-             username: Some(user.username),
-           };
+           //  Js.log2("res", res);
+           // this is bad, i think, because we aren't handling errors. We know, for purposes of the example, that the username is at the `username` key so let's go with it.
+           let username = res##username;
 
            Js.log("sign in success!");
-           Js.log(userData);
-           dispatch(UserLoggedIn(userData));
+           dispatch(UserLoggedIn(username));
            resolve();
          })
       |> catch(err => {
@@ -29,10 +25,21 @@ let make = () => {
          })
       |> ignore
     );
-  let handleLogout = () => {
-
+  let handleSignOut = () => {
+    Amplify.signOut();
     dispatch(UserLoggedOut);
     Js.log("signing out!");
+    /* test if user is logged out because you can still log the user after logging out. Running currentAuthenticated user shows that we are logged out so why is `user` logging out below?*/
+    Amplify.currentAuthenticatedUser
+    |> Js.Promise.then_(data => {
+         Js.log2("data", data);
+         Js.Promise.resolve(data);
+       })
+    |> Js.Promise.catch(error => Js.log2("error", error)->Js.Promise.resolve)
+    |> Js.Promise.resolve
+    |> ignore;
+    /* user still logs after logging out. Why? */
+    Js.log2("signing out user!",user);
   };
 
   switch (user) {
@@ -94,19 +101,17 @@ let make = () => {
         </button>
       </div>
     </form>
-  | LoggedIn(userData) =>
-    let name =userData.username
-      ->Belt.Option.getWithDefault("");
+  | LoggedIn(userName) =>
     <div className="user-form">
       <span className="logged-in">
         {s("Logged in as: ")}
-        <b> {s(name)} </b>
+        <b> {s(userName)} </b>
       </span>
       <div className="control">
-        <button className="button is-link" onClick={_ => handleLogout()}>
+        <button className="button is-link" onClick={_ => handleSignOut()}>
           {s("Log Out")}
         </button>
       </div>
-    </div>;
+    </div>
   };
 };

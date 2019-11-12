@@ -10,8 +10,6 @@ S /Users/prisc_000/Downloads/brandt-plus-krutikova-simple/node_modules/@glennsl/
 B /Users/prisc_000/Downloads/brandt-plus-krutikova-simple/node_modules/@glennsl/bs-jest/lib/ocaml
 S src
 B lib/bs/src
-S src/aws
-B lib/bs/src/aws
 S src/auth
 B lib/bs/src/auth
 ####BSB GENERATED: NO EDIT}
