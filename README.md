@@ -1,68 +1,183 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- PROJECT SHIELDS -->
 
-## Available Scripts
+[![Contributors][contributors-shield]][contributors-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
 
-In the project directory, you can run:
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/idkjs/brandt-plus-krutikova-simple">
+    <img src="logo.png" alt="Logo">
+  </a>
 
-### `npm start`
+  <h3 align="center">Reason Music Player + Auth</h3>
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  <p align="center">
+    A simple music player built with ReasonReact and useContext and useAuthContext
+    <br />
+    <a href="https://github.com/idkjs/brandt-plus-krutikova-simple"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://idkjs.github.io/brandt-plus-krutikova-simple/">View Demo</a>
+    ·
+    <a href="https://github.com/idkjs/brandt-plus-krutikova-simple/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/idkjs/brandt-plus-krutikova-simple/issues">Request Feature</a>
+  </p>
+</p>
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+<!-- TABLE OF CONTENTS -->
 
-### `npm test`
+## Table of Contents
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [About the Project](#about-the-project)
+  - [Built With](#built-with)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Acknowledgements](#acknowledgements)
 
-### `npm run build`
+<!-- ABOUT THE PROJECT -->
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## About The Project
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+> A ReasonReact music player with the React Context API
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**☞ [View Demo][demo]**
 
-### `npm run eject`
+This is a port of James King's blog post **[How to Use the useContext Hook in React][upmostly]** to ReasonReact.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+With this repository you can see my progress in converting a React.js example to **ReasonML and ReasonReact**.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+It also serves as a code example for a **tutorial series**. If you want to follow along, you can read the **blog posts on dev.to**:
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- [How To Create a Music Player in Reason With The useContext Hook Part 1](https://dev.to/sophiabrandt/how-to-create-a-music-player-in-reason-with-the-usecontext-hook-part-1-59dj)
+- [How To Create a Music Player in Reason With The useContext Hook Part 2](https://dev.to/sophiabrandt/how-to-create-a-music-player-in-reason-with-the-usecontext-hook-part-2-3f4a)
+- [How To Create a Music Player in Reason With The useContext Hook Part 3](https://dev.to/sophiabrandt/how-to-create-a-music-player-in-reason-with-the-usecontext-hook-part-3-2f0g)
+- [How To Create a Music Player in Reason With The useContext Hook Part 4](https://dev.to/sophiabrandt/how-to-create-a-music-player-in-reason-with-the-usecontext-hook-part-4-2c9d)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- [ReasonReact context explained in action](https://dev.to/margaretkrutikova/reason-react-context-explained-in-action-5eki)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Built With
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [ReasonML](https://reasonml.github.io/)
+- [ReasonReact](https://reasonml.github.io/reason-react/)
+- [Bulma](https://bulma.io)
 
-### Code Splitting
+<!-- GETTING STARTED -->
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+## Getting Started
 
-### Analyzing the Bundle Size
+To get a local copy up and running follow these steps:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+### Prerequisites
 
-### Making a Progressive Web App
+Before using `reason-music-player` you need:
+- [Node.js](https://nodejs.org/en/) version 10.16.3 or higher
+- [npm](https://www.npmjs.com/get-npm), [yarn](https://yarnpkg.com/), or [pnpm](https://pnpm.js.org/)
+- BuckleScript
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+Install [Bucklescript and Reason](https://reasonml.github.io/docs/en/installation):
 
-### Advanced Configuration
+```sh
+npm install -g bs-platform --unsafe-perm
+```
+(I use [pnpm](https://pnpm.js.org/) for installing local packages, that's why you'll find a `pnpm-lock.yml` file in this repository.)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+For **editor support**, check the [Reason Docs](https://reasonml.github.io/docs/en/editor-plugins).
+For Vim, you can check my blog post about [ReasonML Development With Vim](https://www.rockyourcode.com/reason-ml-development-with-vim).
 
-### Deployment
+### Installation
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+1. Clone the repo
 
-### `npm run build` fails to minify
+```sh
+git clone https://github.com/idkjs/brandt-plus-krutikova-simple.git
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+(Alternatively, use [degit](https://github.com/Rich-Harris/degit): `npx degit idkjs/brandt-plus-krutikova-simple brandt-plus-krutikova-simple`).
+
+3. Install NPM packages
+
+```sh
+cd brandt-plus-krutikova-simple && npm install
+```
+
+<!-- USAGE EXAMPLES -->
+
+## Usage
+
+Run the project locally under `http://localhost:3000` via:
+
+```sh
+npm run start
+```
+
+Create a production build:
+
+```sh
+npm run build
+```
+
+<!-- ROADMAP -->
+
+## Roadmap
+
+See the [open issues](https://github.com/idkjs/brandt-plus-krutikova-simple/issues) for a list of proposed features (and known issues).
+
+<!-- CONTRIBUTING -->
+
+## Contributing
+
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+<!-- LICENSE -->
+
+## License
+
+Distributed under the MIT License. See [`LICENSE`](LICENSE.txt) for more information.
+
+<!-- CONTACT -->
+
+## Contact
+
+Sophia Brandt - [@hiidkjs](https://twitter.com/hisophiabrandt)
+Alain Armand - [@hiidkjs](https://twitter.com/_idkjs)
+
+Project Link: [https://github.com/idkjs/brandt-plus-krutikova-simple](https://github.com/idkjs/brandt-plus-krutikova-simple)
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## Acknowledgements
+
+- [How to Use the useContext Hook in React][upmostly]
+- [Bensound][bensound]
+- [Img Shields](https://shields.io)
+- [Choose an Open Source License](https://choosealicense.com)
+- [Best-README-Template](https://github.com/othneildrew/Best-README-Template/blob/master/README.md)
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[contributors-shield]: https://img.shields.io/github/contributors/idkjs/brandt-plus-krutikova-simple.svg?style=flat-square
+[contributors-url]: https://github.com/idkjs/brandt-plus-krutikova-simple/graphs/contributors
+[issues-shield]: https://img.shields.io/github/issues/idkjs/brandt-plus-krutikova-simple.svg?style=flat-square
+[issues-url]: https://github.com/idkjs/brandt-plus-krutikova-simple/issues
+[license-shield]: https://img.shields.io/github/license/idkjsbrandt-plus-krutikova-simpler.svg?style=flat-square
+[license-url]: https://github.com/idkjs/brandt-plus-krutikova-simple/blob/master/LICENSE.txt
+[upmostly]: https://upmostly.com/tutorials/how-to-use-the-usecontext-hook-in-react
+[bensound]: https://www.bensound.com/
+[demo]: https://idkjs.github.io/brandt-plus-krutikova-simple/
