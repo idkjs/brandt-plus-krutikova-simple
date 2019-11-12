@@ -1,0 +1,9 @@
+{
+	"auth": {
+		"brandtpluskrutikova5c7d370f": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": []
+		}
+	}
+}

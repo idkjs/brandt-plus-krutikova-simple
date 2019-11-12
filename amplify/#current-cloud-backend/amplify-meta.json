@@ -1,0 +1,36 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "brandtpluskrutikova-dev-20191112095549-authRole",
+			"UnauthRoleArn": "arn:aws:iam::073051392232:role/brandtpluskrutikova-dev-20191112095549-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::073051392232:role/brandtpluskrutikova-dev-20191112095549-authRole",
+			"Region": "eu-west-1",
+			"DeploymentBucketName": "brandtpluskrutikova-dev-20191112095549-deployment",
+			"UnauthRoleName": "brandtpluskrutikova-dev-20191112095549-unauthRole",
+			"StackName": "brandtpluskrutikova-dev-20191112095549",
+			"StackId": "arn:aws:cloudformation:eu-west-1:073051392232:stack/brandtpluskrutikova-dev-20191112095549/84277550-055c-11ea-8aca-06c001d97fde"
+		}
+	},
+	"auth": {
+		"brandtpluskrutikova5c7d370f": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [],
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/brandtpluskrutikova-dev-20191112095549-deployment/amplify-cfn-templates/auth/brandtpluskrutikova5c7d370f-cloudformation-template.yml",
+				"logicalId": "authbrandtpluskrutikova5c7d370f"
+			},
+			"lastPushTimeStamp": "2019-11-12T15:05:19.616Z",
+			"output": {
+				"AppClientSecret": "4sql7f98bija8hknm2l6n7vn7458tesks1ghhifjje6mc7tdpnv",
+				"UserPoolId": "eu-west-1_qsBUOgK1h",
+				"AppClientIDWeb": "6re1anr8srpkrj3867p1864g2n",
+				"AppClientID": "56ssgco7jfsfrqiuipg98d220l",
+				"IdentityPoolId": "eu-west-1:ecc2ac36-6020-4d08-b614-9cb15027fef7",
+				"IdentityPoolName": "brandtpluskrutikova5c7d370f_identitypool_5c7d370f__dev",
+				"UserPoolName": "brandtpluskrutikova5c7d370f_userpool_5c7d370f"
+			},
+			"lastPushDirHash": "ZNDg1GQkoKuX/elnVbsOfISCmE0="
+		}
+	}
+}

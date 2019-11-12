@@ -1,0 +1,19 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "brandtpluskrutikova-dev-20191112095549-authRole",
+            "UnauthRoleArn": "arn:aws:iam::073051392232:role/brandtpluskrutikova-dev-20191112095549-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::073051392232:role/brandtpluskrutikova-dev-20191112095549-authRole",
+            "Region": "eu-west-1",
+            "DeploymentBucketName": "brandtpluskrutikova-dev-20191112095549-deployment",
+            "UnauthRoleName": "brandtpluskrutikova-dev-20191112095549-unauthRole",
+            "StackName": "brandtpluskrutikova-dev-20191112095549",
+            "StackId": "arn:aws:cloudformation:eu-west-1:073051392232:stack/brandtpluskrutikova-dev-20191112095549/84277550-055c-11ea-8aca-06c001d97fde"
+        },
+        "categories": {
+            "auth": {
+                "brandtpluskrutikova5c7d370f": {}
+            }
+        }
+    }
+}

@@ -1,6 +1,21 @@
+type userData = {
+  isLoggedIn: bool,
+  username: option(string),
+};
+
 type user =
   | Anonymous
-  | LoggedIn(string);
+  | LoggedIn(userData);
+
 type userAction =
-  | UserLoggedIn(string)
+  | UserLoggedIn(userData)
   | UserLoggedOut;
+
+type userResponse = {
+  username: string,
+};
+
+let userfromJs: Js.t('a) => userResponse =
+  data => {
+    username: data##username,
+  };

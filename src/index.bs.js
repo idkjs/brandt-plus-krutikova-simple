@@ -2,6 +2,7 @@
 
 import * as Root from "./Root.bs.js";
 import * as React from "react";
+import * as Amplify from "./aws/Amplify.bs.js";
 import * as ReactDOMRe from "reason-react/src/ReactDOMRe.js";
 import * as ServiceWorker from "./serviceWorker";
 import * as IndexModuleCss from "./index.module.css";
@@ -17,6 +18,8 @@ function unregister_service_worker(prim) {
   ServiceWorker.unregister();
   return /* () */0;
 }
+
+Amplify.configure(/* () */0);
 
 ReactDOMRe.renderToElementWithId(React.createElement(Root.make, { }), "root");
 

@@ -5,7 +5,10 @@ type contextValue = (user, dispatch);
 
 type context = contextValue => React.Context.t(contextValue);
 
-let initValue: contextValue = (Anonymous, _ => ignore());
+let initValue: contextValue = (
+  Anonymous,
+  _ => ignore(),
+);
 let context = React.createContext(initValue);
 
 module Provider = {
@@ -16,4 +19,3 @@ module Provider = {
   let make = React.Context.provider(context);
 };
 let useUser = () => React.useContext(context);
-
