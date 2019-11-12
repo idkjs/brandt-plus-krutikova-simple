@@ -57,10 +57,14 @@ With this repository you can see my progress in converting a React.js example to
 
 It also serves as a code example for a **tutorial series**. If you want to follow along, you can read the **blog posts on dev.to**:
 
+Via [@hisophiabrandt]
+
 - [How To Create a Music Player in Reason With The useContext Hook Part 1](https://dev.to/sophiabrandt/how-to-create-a-music-player-in-reason-with-the-usecontext-hook-part-1-59dj)
 - [How To Create a Music Player in Reason With The useContext Hook Part 2](https://dev.to/sophiabrandt/how-to-create-a-music-player-in-reason-with-the-usecontext-hook-part-2-3f4a)
 - [How To Create a Music Player in Reason With The useContext Hook Part 3](https://dev.to/sophiabrandt/how-to-create-a-music-player-in-reason-with-the-usecontext-hook-part-3-2f0g)
 - [How To Create a Music Player in Reason With The useContext Hook Part 4](https://dev.to/sophiabrandt/how-to-create-a-music-player-in-reason-with-the-usecontext-hook-part-4-2c9d)
+
+Via [@rita_krutikova]
 
 - [ReasonReact context explained in action](https://dev.to/margaretkrutikova/reason-react-context-explained-in-action-5eki)
 
@@ -154,8 +158,9 @@ Distributed under the MIT License. See [`LICENSE`](LICENSE.txt) for more informa
 
 ## Contact
 
-Sophia Brandt - [@hiidkjs](https://twitter.com/hisophiabrandt)
-Alain Armand - [@hiidkjs](https://twitter.com/_idkjs)
+Sophia Brandt - [@hisophiabrandt](https://twitter.com/hisophiabrandt)
+Alain Armand - [@_idkjs](https://twitter.com/_idkjs)
+Margarita Krutikova - [@rita_krutikova](https://twitter.com/rita_krutikova)
 
 Project Link: [https://github.com/idkjs/brandt-plus-krutikova-simple](https://github.com/idkjs/brandt-plus-krutikova-simple)
 
@@ -181,3 +186,5 @@ Project Link: [https://github.com/idkjs/brandt-plus-krutikova-simple](https://gi
 [upmostly]: https://upmostly.com/tutorials/how-to-use-the-usecontext-hook-in-react
 [bensound]: https://www.bensound.com/
 [demo]: https://idkjs.github.io/brandt-plus-krutikova-simple/
+[@hisophiabrandt]: https://twitter.com/hisophiabrandt
+[@rita_krutikova]: https://twitter.com/rita_krutikova

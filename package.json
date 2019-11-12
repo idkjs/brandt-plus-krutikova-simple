@@ -2,10 +2,12 @@
   "name": "brandt-plus-krutikova-simple",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://idkjs.github.io/brandt-plus-krutikova-simple",
   "dependencies": {
     "@glennsl/bs-jest": "0.4.9",
     "bs-platform": "5.2.1",
     "cra-reason-template": "0.1.3",
+    "gh-pages": "2.1.1",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "reason-react": "0.7.0"
@@ -17,7 +19,9 @@
     "eject": "react-scripts eject",
     "bs:make": "bsb -make-world",
     "bs:watch": "bsb -make-world -w",
-    "bs:clean": "bsb -clean-world"
+    "bs:clean": "bsb -clean-world",
+     "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"

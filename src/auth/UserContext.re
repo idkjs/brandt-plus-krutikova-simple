@@ -1,5 +1,4 @@
-// open SharedTypes;
-open AuthTypes;
+open Types;
 
 type dispatch = userAction => unit;
 type contextValue = (user, dispatch);

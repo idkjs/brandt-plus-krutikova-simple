@@ -1,4 +1,3 @@
-// open SharedTypes;
 open ReactUtils;
 
 [@react.component]

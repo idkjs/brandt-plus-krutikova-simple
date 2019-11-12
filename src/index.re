@@ -5,7 +5,7 @@ external register_service_worker: unit => unit = "register";
 [@bs.module "./serviceWorker"]
 external unregister_service_worker: unit => unit = "unregister";
 
-ReactDOMRe.renderToElementWithId(<App />, "root");
+ReactDOMRe.renderToElementWithId(<Root />, "root");
 
 // If you want your app to work offline and load faster, you can change
 // unregister_service_worker() to register_service_worker() below. Note this

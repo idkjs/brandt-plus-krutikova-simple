@@ -4,7 +4,7 @@ import * as Curry from "bs-platform/lib/es6/curry.js";
 import * as React from "react";
 import * as UserContext from "./UserContext.bs.js";
 
-function AuthControl(Props) {
+function Header(Props) {
   var match = UserContext.useUser(/* () */0);
   var dispatch = match[1];
   var user = match[0];
@@ -69,7 +69,7 @@ function AuthControl(Props) {
   }
 }
 
-var make = AuthControl;
+var make = Header;
 
 export {
   make ,
