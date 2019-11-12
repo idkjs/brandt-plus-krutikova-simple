@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/brandt-plus-krutikova-simple/static/css/main.c41158f1.chunk.css",
+    "main.js": "/brandt-plus-krutikova-simple/static/js/main.4d421af3.chunk.js",
+    "main.js.map": "/brandt-plus-krutikova-simple/static/js/main.4d421af3.chunk.js.map",
+    "runtime~main.js": "/brandt-plus-krutikova-simple/static/js/runtime~main.2df0c11a.js",
+    "runtime~main.js.map": "/brandt-plus-krutikova-simple/static/js/runtime~main.2df0c11a.js.map",
+    "static/js/2.54137f9e.chunk.js": "/brandt-plus-krutikova-simple/static/js/2.54137f9e.chunk.js",
+    "static/js/2.54137f9e.chunk.js.map": "/brandt-plus-krutikova-simple/static/js/2.54137f9e.chunk.js.map",
+    "index.html": "/brandt-plus-krutikova-simple/index.html",
+    "precache-manifest.115f0662d8f91da6fa9bab489c4097ee.js": "/brandt-plus-krutikova-simple/precache-manifest.115f0662d8f91da6fa9bab489c4097ee.js",
+    "service-worker.js": "/brandt-plus-krutikova-simple/service-worker.js",
+    "static/css/main.c41158f1.chunk.css.map": "/brandt-plus-krutikova-simple/static/css/main.c41158f1.chunk.css.map",
+    "static/media/bensound-creativeminds.mp3": "/brandt-plus-krutikova-simple/static/media/bensound-creativeminds.e175412e.mp3",
+    "static/media/bensound-summer.mp3": "/brandt-plus-krutikova-simple/static/media/bensound-summer.fd79b114.mp3",
+    "static/media/bensound-ukulele.mp3": "/brandt-plus-krutikova-simple/static/media/bensound-ukulele.95698692.mp3"
+  }
+}
