@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/brandt-plus-krutikova-simple/precache-manifest.115f0662d8f91da6fa9bab489c4097ee.js"
+  "/brandt-plus-krutikova-simple/precache-manifest.da5e689eb32cbe40adc9f99e01c44d83.js"
 );
 
 self.addEventListener('message', (event) => {

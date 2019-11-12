@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f9ea99a9e5cc4b4f95f859c16d22db4d",
+    "revision": "b4f88e37bef1d5576f13d5dfb8fbac98",
     "url": "/brandt-plus-krutikova-simple/index.html"
   },
   {
-    "revision": "d4b39caca651a4159345",
+    "revision": "511cba8c16e3c355e5d8",
     "url": "/brandt-plus-krutikova-simple/static/css/main.c41158f1.chunk.css"
   },
   {
-    "revision": "56d22811780033a26555",
-    "url": "/brandt-plus-krutikova-simple/static/js/2.54137f9e.chunk.js"
+    "revision": "d1c923f1715f0948775d",
+    "url": "/brandt-plus-krutikova-simple/static/js/2.9bb7e1d1.chunk.js"
   },
   {
-    "revision": "d4b39caca651a4159345",
-    "url": "/brandt-plus-krutikova-simple/static/js/main.4d421af3.chunk.js"
+    "revision": "511cba8c16e3c355e5d8",
+    "url": "/brandt-plus-krutikova-simple/static/js/main.5496f3b3.chunk.js"
   },
   {
     "revision": "149e80e06d1e59150a7f",
