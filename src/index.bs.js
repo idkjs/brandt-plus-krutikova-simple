@@ -2,7 +2,7 @@
 
 import * as Root from "./Root.bs.js";
 import * as React from "react";
-import * as ReactDOMRe from "reason-react/src/ReactDOMRe.js";
+import * as ReactDOMRe from "reason-react/src/legacy/ReactDOMRe.bs.js";
 import * as ServiceWorker from "./serviceWorker";
 import * as IndexModuleCss from "./index.module.css";
 
@@ -10,15 +10,15 @@ var _css = IndexModuleCss;
 
 function register_service_worker(prim) {
   ServiceWorker.register();
-  return /* () */0;
+  
 }
 
 function unregister_service_worker(prim) {
   ServiceWorker.unregister();
-  return /* () */0;
+  
 }
 
-ReactDOMRe.renderToElementWithId(React.createElement(Root.make, { }), "root");
+ReactDOMRe.renderToElementWithId(React.createElement(Root.make, {}), "root");
 
 ServiceWorker.unregister();
 

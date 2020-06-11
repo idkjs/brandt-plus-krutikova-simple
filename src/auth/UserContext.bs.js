@@ -2,13 +2,13 @@
 
 import * as React from "react";
 
-function initValue_001(param) {
-  return /* () */0;
+function initValue_1(param) {
+  
 }
 
-var initValue = /* tuple */[
+var initValue = [
   /* Anonymous */0,
-  initValue_001
+  initValue_1
 ];
 
 var context = React.createContext(initValue);

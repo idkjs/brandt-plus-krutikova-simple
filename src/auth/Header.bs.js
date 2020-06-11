@@ -5,12 +5,12 @@ import * as React from "react";
 import * as UserContext from "./UserContext.bs.js";
 
 function Header(Props) {
-  var match = UserContext.useUser(/* () */0);
+  var match = UserContext.useUser(undefined);
   var dispatch = match[1];
   var user = match[0];
-  var match$1 = React.useState((function () {
-          return "musicLover";
-        }));
+  var match$1 = React.useState(function () {
+        return "musicLover";
+      });
   var setUserName = match$1[1];
   var userName = match$1[0];
   if (user) {
@@ -18,7 +18,7 @@ function Header(Props) {
                 className: "user-form"
               }, React.createElement("span", {
                     className: "logged-in"
-                  }, "Logged in as: ", React.createElement("b", undefined, user[0])), React.createElement("div", {
+                  }, "Logged in as: ", React.createElement("b", undefined, user._0)), React.createElement("div", {
                     className: "control"
                   }, React.createElement("button", {
                         className: "button is-link",
@@ -31,7 +31,9 @@ function Header(Props) {
                 className: "user-form",
                 onSubmit: (function (e) {
                     e.preventDefault();
-                    return Curry._1(dispatch, /* UserLoggedIn */[userName]);
+                    return Curry._1(dispatch, /* UserLoggedIn */{
+                                _0: userName
+                              });
                   })
               }, React.createElement("div", {
                     className: "field"
