@@ -6,7 +6,6 @@
   },
   "bs-dependencies": ["reason-react", "@glennsl/bs-jest"],
   "bsc-flags": ["-bs-super-errors"],
-  "refmt": 3,
   "reason": {
     "react-jsx": 3
   },
